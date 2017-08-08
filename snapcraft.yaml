@@ -1,0 +1,17 @@
+name: sqrt-printenv-py
+version: '0.1'
+summary: Print information about the environment
+description: |
+  Print information about the environment
+
+grade: devel # must be 'stable' to release into candidate/stable channels
+confinement: devmode # use 'strict' once you have the right plugs and slots
+
+parts:
+  sqrt-printenv-py:
+    source: sqrt-printenv-py
+    plugin: python
+
+apps:
+  sqrt-printenv-py:
+    command: sqrt-printenv-py
